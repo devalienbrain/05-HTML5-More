@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 More Practise-1</title>
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="table.html">Table</a>
+        </li>
+        <li>
+          <a href="form.html">Form</a>
+        </li>
+        <li id="nested-li">
+          <a href="">Tasks</a>
+          <ul>
+            <li>
+              <a href="practice-task1.html">Task-1</a>
+            </li>
+            <li>
+              <a href="practice-task2.html">Task-2</a>
+            </li>
+            <li>
+              <a href="practice-task3.html">Task-3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- This section is for search image part -->
+  <section>
+    Search your Image here:
+    <input type="text" placeholder="Kung Fu Panda">
+    <!-- <i class="fa-regular fa-xmark"></i> -->
+    <button>Search</button>
+  </section>
+
+  <!-- IMAGE Section -->
+  <section>
+    <img width="300px" src="images/kungfu-panda-transparent.png" alt="Kung Fu Panda">
+    <a href="https://www.google.com/" target="_blank"> <br> For more click here</a>
+  </section>
+  <hr>
+  <!-- This section is to build form -->
+  <section>
+    <h2>Feedback Form:</h2>
+    <h3>Name:</h3>
+    <input type="text">
+    <br>
+    <h3>Date:</h3>
+    <input type="date" name="Date" id="daTe">
+    <h3>Comment:</h3>
+    <textarea rows="4" cols="70" name="comment" form="usrform">
+    </textarea>
+    <br><br>
+    <input type="submit">
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid grey;
+      text-align: center;
+    }
+
+    tr,
+    th,
+    td {
+      padding: 5px;
+    }
+
+    th,
+    .column-first {
+      background-color: black;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header part -->
+  <header class="header">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="table.html">Table</a>
+        </li>
+        <li>
+          <a href="form.html">Form</a>
+        </li>
+        <li id="nested-li">
+          <a href="">Tasks</a>
+          <ul>
+            <li>
+              <a href="practice-task1.html">Task-1</a>
+            </li>
+            <li>
+              <a href="practice-task2.html">Task-2</a>
+            </li>
+            <li>
+              <a href="practice-task3.html">Task-3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main body part -->
+  <main>
+    <section>
+      <!-- Table part starts here -->
+      <table>
+        <!-- 01) Caption of the table -->
+        <caption>This is my first HTML Table</caption>
+
+        <!--02) Table header part starts-->
+        <thead>
+          <tr>
+            <!-- Here table has 4 colums. th indicates head -->
+            <th>Col-1</th>
+            <th>Col-2</th>
+            <th>Col-3</th>
+            <th>Col-4</th>
+          </tr>
+        </thead>
+        <!--Table Head ENDS -->
+
+        <!--03) Table body part -->
+        <tbody>
+          <!-- Here table has 4 colums. td indicates data inside table -->
+          <tr>
+            <td class="column-first">Row-1</td>
+            <td>data-2</td>
+            <td>data-3</td>
+            <td>data-4</td>
+          </tr>
+          <tr>
+            <td class="column-first">Row-2</td>
+            <td>data-5</td>
+            <td>data-6</td>
+            <td>data-7</td>
+          </tr>
+        </tbody>
+        <!--Table Body ENDS -->
+
+        <!-- 04) Table footer part -->
+        <tfoot>
+          <tr>
+            <td>Result</td>
+            <td colspan="3">Total is 100</td>
+          </tr>
+        </tfoot>
+        <!--Table footer ENDS -->
+      </table>
+    </section>
+  </main>
+  <!-- Footer part -->
+  <footer>
+
+  </footer>
+</body>
+
+</html>

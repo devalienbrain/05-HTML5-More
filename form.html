@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      /* width: 100%; */
+    }
+
+    .container-details {
+      /* flex: 40%; */
+      text-align: center;
+    }
+
+    .container-form {
+      /* flex: 60%; */
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  </style> -->
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="table.html">Table</a>
+        </li>
+        <li>
+          <a href="form.html">Form</a>
+        </li>
+        <li id="nested-li">
+          <a href="">Tasks</a>
+          <ul>
+            <li>
+              <a href="practice-task1.html">Task-1</a>
+            </li>
+            <li>
+              <a href="practice-task2.html">Task-2</a>
+            </li>
+            <li>
+              <a href="practice-task3.html">Task-3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="container-details">
+        <h1>Jamal & Kamal's Mother's Pitha Shop</h1>
+        <img src="images/pitha-khala.jpg" alt="Pitha Khala" width="50%">
+      </div>
+      <div>
+        <section>
+          <h3>Please Fill the Form first</h3>
+          <form action="">
+            <div>
+              <label for=""> Your name
+                <input type="text" placeholder="write your nick name">
+              </label>
+            </div>
+
+            <div>
+              <label for="">
+                Your Mobile Number:
+                <input type="text" placeholder="write your mobile number">
+              </label>
+            </div>
+            <div>
+              <input type="button" value="Submit">
+              <input type="button" value="RESET">
+            </div>
+            <!-- RADIO TYPE INPUT USING FIELDSET&LEGEND STARTS-->
+            <fieldset>
+              <legend>HELLO! select one... </legend>
+              <div>
+                <label for="Only-one">
+                  <input type="radio" name="1" id="">
+                  Option-1
+                </label>
+              </div>
+              <div>
+                <label for="Only-one">
+                  <input type="radio" name="2" id="">
+                  Option-2
+                </label>
+              </div>
+            </fieldset>
+            <!-- RADIO TYPE INPUT USING FIELDSET&LEGEND ENDS-->
+
+            <!-- CHECKBOX TYPE INPUT USING FIELDSET&LEGEND STARTS-->
+            <fieldset>
+              <legend>Hello again! chose items...</legend>
+              <label for="">
+                <input type="checkbox" name="" id="">
+                Type - 01
+              </label>
+              <label for="">
+                <input type="checkbox" name="" id="">
+                Type - 02
+              </label>
+              <label for="">
+                <input type="checkbox" name="" id="">
+                Type - 03
+              </label>
+            </fieldset>
+            <!-- CHECKBOX TYPE INPUT USING FIELDSET&LEGEND ENDS-->
+            <input type="submit" value="Oder Now">
+            <input type="reset" value="Reset Your Order">
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
